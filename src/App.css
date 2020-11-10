@@ -133,6 +133,10 @@ button {
   padding: 18px 20px;
 }
 
+.mr-size-selection {
+  padding: 0 5px;
+}
+
 .mr-sizebtn::selection {
   border: 3px solid #222222;
 }

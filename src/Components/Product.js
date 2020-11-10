@@ -19,7 +19,7 @@ function Product( props ) {
                     <div className="mr-flex">
                         <p className="mr-upper mr-fontlight mr-bold">Size</p>
                         <p className="mr-required">*</p>
-                        <p>{sizeSelected}</p>
+                        <p className="mr-size-selection mr-bold">{sizeSelected}</p>
                     </div>
                     <div>
                         <button 
