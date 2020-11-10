@@ -12,11 +12,11 @@ function Cart() {
 
     return (
         <div className="mr-cart">
-            <p className="mr-cart-title"
+            <div className="mr-cart-title"
                 onClick={() => setShowCart(!showCart)}
             >
-                My Cart ( 4 )
-            </p>
+                <p className="mr-cart-titleText">My Cart ( 4 )</p>
+            </div>
             <div className="mr-cart-drop">
                 {cartDrop}
                 <div className="mr-cart-item">
