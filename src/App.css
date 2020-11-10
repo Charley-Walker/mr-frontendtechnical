@@ -47,15 +47,19 @@ button {
 }
 
 .mr-cart-title {
-  background-color: #ffffff;
   padding: 0 10px;
   width: fit-content;
   margin: auto;
   margin-right: 5%;
   height: 100%;
+
+  user-select: none;
+}
+
+.mr-cart-title:hover {
+  background-color: #ffffff;
   border: 1px solid #cccccc;
   border-bottom: 0;
-  user-select: none;
 }
 
 .mr-cart-titleText {
@@ -79,6 +83,12 @@ button {
   font-size: 1.2em;
   font-weight: bold;
   padding: 12px 25px;
+}
+
+.mr-cartbtn:hover {
+  background-color: #222222;
+  transition: background-color 0.2s;
+  color: white;
 }
 .mr-cart-image {
   width: 100px;
