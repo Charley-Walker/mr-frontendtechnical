@@ -63,7 +63,7 @@ button {
 }
 
 .mr-cart-drop {
-  width: 80%;
+  width: 85%;
   padding: 20px;
   border: 1px solid #cccccc;
   border-top: none;
@@ -72,6 +72,22 @@ button {
   position: absolute;
   background-color: white;
   right: 5%;
+}
+
+.mr-cartbtn {
+  border: 3px solid #222222;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 12px 25px;
+}
+.mr-cart-image {
+  width: 100px;
+}
+
+.mr-cart-detailtext {
+  padding-left: 10px;
+  padding-right: 120px;
+  font-size: 0.9em;
 }
 
 /* Product Component */
@@ -106,13 +122,6 @@ button {
   border: 3px solid #222222;
 }
 
-.mr-cartbtn {
-  border: 3px solid #222222;
-  font-size: 1.2em;
-  font-weight: bold;
-  padding: 12px 25px;
-}
-
 @media only screen and (min-width: 1000px) {
   .mr-header {
     width: 70%;
@@ -133,7 +142,8 @@ button {
   }
 
   .mr-cart-drop {
-    width: 40%;
+    width: fit-content;
+    padding: 20px 50px 20px 30px;
     margin-right: 15%;
     right: 10.5%;
   }

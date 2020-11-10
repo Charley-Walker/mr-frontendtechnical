@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Product from './Product'
+import productImage from '../images/classic-tee.jpg'
 
 function Cart() {
     const [showCart, setShowCart] = useState(false)
@@ -11,7 +12,14 @@ function Cart() {
 
     if(cartCount>0){
         for(var i = 0; i <= cartCount; i++){
-
+            items = <div className="mr-flex">
+                <img src={productImage} alt="Product Image" className="mr-cart-image"/>
+                <div className="mr-cart-detailtext">
+                    <p>Classic Tee</p>
+                    <p className="mr-bold">1x $75.00</p>
+                    <p>Size: S</p>
+                </div>
+            </div>
         }
     }
     else{
