@@ -4,11 +4,22 @@ import Product from './Product'
 function Cart() {
     const [showCart, setShowCart] = useState(false)
     const [cartCount, setCartCount] = useState(0)
+    
+    let items
 
     let cartDrop
 
+    if(cartCount>0){
+        for(var i = 0; i <= cartCount; i++){
+
+        }
+    }
+    else{
+        items = <p>Your cart is empty</p>
+    }
+
     if(showCart){
-        cartDrop = <div  className="mr-cart-drop">This is the cart detail</div>
+        cartDrop = <div  className="mr-cart-drop">{items}</div>
     }
 
     return (
@@ -27,6 +38,7 @@ function Cart() {
             </div>
             <Product
                 updateCart={() => setCartCount(cartCount + 1)}
+                
             />
         </div>
 

@@ -12,7 +12,7 @@ function Product( props ) {
                 <div className="mr-product-imageContainer">
                     <img src={productImage} alt="Product Image" className="mr-product-image"/>
                 </div>
-                <div>
+                <div className="mr-product-detailContainer">
                     <h1 className="mr-headertext">Classic Tee</h1>
                     <p className="mr-bold">$75.00</p>
                     <p className="mr-fontlight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at neque et lacus consequat euismod ut id eros. Aliquam finibus ligula dictum risus feugiat, sit amet consectetur tellus posuere. In magna quam, rutrum a posuere et, dignissim ut nulla. Mauris sit amet commodo dolor. Nam sapien nulla, mollis ac varius eu, feugiat vel est. Praesent a nisi iaculis, tempor libero sed, tristique nunc. Maecenas luctus tempor eleifend. Aenean porta molestie finibus.</p>

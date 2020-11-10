@@ -68,10 +68,10 @@ button {
   border: 1px solid #cccccc;
   border-top: none;
   margin: auto;
-  margin-right: 5%;
-  z-index: 1;
-  position: relative;
+  z-index: 10;
+  position: absolute;
   background-color: white;
+  right: 5%;
 }
 
 /* Product Component */
@@ -81,6 +81,7 @@ button {
 
 .mr-product-container {
   margin: 20px;
+  z-index: 1;
 }
 
 .mr-product-imageContainer {
@@ -101,14 +102,18 @@ button {
   padding: 18px 20px;
 }
 
+.mr-sizebtn::selection {
+  border: 3px solid #222222;
+}
+
 .mr-cartbtn {
-  border: 2px solid#222222;
+  border: 3px solid #222222;
   font-size: 1.2em;
   font-weight: bold;
   padding: 12px 25px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1000px) {
   .mr-header {
     width: 70%;
   }
@@ -130,5 +135,16 @@ button {
   .mr-cart-drop {
     width: 40%;
     margin-right: 15%;
+    right: 10.5%;
+  }
+  .mr-product-container {
+    display: flex;
+  }
+
+  .mr-product-imageContainer {
+    width: 50%;
+  }
+  .mr-product-detailContainer {
+    width: 50%;
   }
 }
