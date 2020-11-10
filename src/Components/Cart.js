@@ -1,13 +1,14 @@
 import React, {useState} from 'react'
-
+import Product from './Product'
 
 function Cart() {
     const [showCart, setShowCart] = useState(false)
+    const [cartCount, setCartCount] = useState(0)
 
     let cartDrop
 
     if(showCart){
-        cartDrop = <div>This is the cart detail</div>
+        cartDrop = <div  className="mr-cart-drop">This is the cart detail</div>
     }
 
     return (
@@ -15,15 +16,21 @@ function Cart() {
             <div className="mr-cart-title"
                 onClick={() => setShowCart(!showCart)}
             >
-                <p className="mr-cart-titleText">My Cart ( 4 )</p>
-            </div>
-            <div className="mr-cart-drop">
-                {cartDrop}
-                <div className="mr-cart-item">
-
+                <div className="mr-cart-titleText mr-flex">
+                    <p className="mr-carttext">My Cart </p>
+                    <p className="fa fa-shopping-cart mr-carticon"></p>
+                    <p className="mr-cartCount">( {cartCount} )</p>
                 </div>
             </div>
+            <div>
+                {cartDrop}
+            </div>
+            <Product
+                updateCart={() => setCartCount(cartCount + 1)}
+            />
         </div>
+
+        
     )
 }
 

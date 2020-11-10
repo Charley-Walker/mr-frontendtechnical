@@ -1,12 +1,13 @@
 import React from 'react'
+
 import Cart from './Cart'
 
-function Header() {
+function Main() {
     return (
         <div className="mr-header">
-            <Cart/>
+            <Cart />
         </div>
     )
 }
 
-export default Header
+export default Main
